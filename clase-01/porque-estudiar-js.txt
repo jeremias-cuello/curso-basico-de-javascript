@@ -1,0 +1,16 @@
+hace el 2019, Javascript era parte de tres lenguajes que podiamos utilizar para hacer productos web (HTML, CSS y JavaScript).
+JavaScript era el único lenguaje de programación que se podia utilizar para hacer que las paginas sean dinamicas o generar una aplicación web.
+Pero a finales del 2019, la W3C (World Wide Web Consortium) decidió y subio como nuevo lenguaje de programacion Web Asembly.
+
+la W3C: consorcio que decide cuales son estos estandares que van a correr y que va a entender el navegador para poder generar productos web. por ejenplo: HTML, CSS, JS.
+
+
+JavaScript
+ • tiene una comunidad de desarrolladores enorme.
+ • Web: tiene muchos frameworks, librerias que ayudan a hacer proyectos de forma mas rapida y eficiente y mucho mas robusta
+ • Aplicaciones Nativas: Andois o IOS
+ • Desktop: Electron.
+ • Backend y IOT: NodeJS
+
+
+
