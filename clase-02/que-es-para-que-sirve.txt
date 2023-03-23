@@ -1,0 +1,82 @@
+En los 90's las paginas eran muy estaticas. Solo se podian leer textos y ver imagenes. Esto implico una necesidad de dinamismo. Es por eso tambien que se genera un lenguaje de programacion donde los usuarios puedan empezar a interactuar con el contenido, empezar a generar su contenido, etc. esto se llama JavaScript que es un lenguaje orientado 100% a trabajar en la web y ayudarnos a generar aplicaciones web.
+
+JavaScript es:
+ + lenguaje interpretado
+ + orientado a objetos
+ + debilmente tipado
+ + dinamico
+
+debilmente tipado:
+operaciones aritmeticas 
+ 4  + "7" = "47"
+"4" + "7" = "47"
+ 4  - "7" = -3
+"4" - "7" = -3
+ 4  * "7" = 28
+"4" * "7" = 28 
+ 4  / "7" = 0,57...
+"4" / "7" = 0.57...
+
+operaciones de relacion
+ 5  > "3" = true 
+"5" > "3" = true
+ 5  < "3" = false
+"5" < "3" = false
+"5" ==  5  = true
+"5" == "5" = true
+"5" !=  5 = false
+"5" != "5" = false
+
+CONCLUSION:
+TODOS LOS OPERADORES DE RELACION Y ARITMETICOS TRATA A LOS STRING COMO NUMEROS !!MENOS!! LA SUMA (+)
+LA SUMA TRATA A LOS NUMEROS COMO STRING.
+
+ATENCION:
+ + LA JERARQUIA DE LOS OPERADORES EN JS ES:
+   * 1ERO OPERADORES ARITMETICOS
+   * 2DO OPERADORES DE RELACION
+ + LAS OPERACIONES QUE HACEN LAS COMPUTADORAS SIN PARENTESIS EN TODA SU EXPRESION
+ + LAS EJECUTAN DE IZQUIERDA A DERECHA
+
+AHORA CON BOOLEANOS Y LAS OPERACIONES BOOLEANAS
+ + NOT (!)
+ + OR (||)
+ + AND (&&)
+
+   !VAR
+
+va a devolver false para todo VAR distinto de Number(0).
+
+!"0" = false pero !0 = true OJO CON ESO
+
+CONCLUSION:
+TODOS LOS OPERADORES DE RELACION Y ARITMETICOS TRATA A LOS booleanos COMO NUMEROS (true = 1, false = 0) MENOS LA SUMA (+), LA SUMA TRATARA A 'true' como string.
+
+(1 > 5) + "5" = 'false5'
+ 1 > 5  + "5" = 1 > "55" = false
+
+CURIOSIDAD
+[+ "5" = 5] transformar un numero string en numero
+
+AHORA OPERACIONES A NIVEL BITS
+ + NOT (~)
+ + OR (|)
+ + AND (^)
+
+
+JS es dinamico
+porque no se compila, directamente corre en el navegador
+
+1: cuando el navegador descarga nuestro codigo JS y puede ejecutar las cosas que hicimos
+2: cuando codeamos js tiene que haber "algo" que traduzca el lenguaje semantico que codificamos a byte code. ese "algo" son los motores de JS que usan los navegadores. Para esa traducción que podrimos entender como compilacion los motores mapean el programa por caminos de instrucciones en forma de arbol para estructurar y modelar el programa, luego de ello lo compila. ¿entonces es compilado? no, porque esto lo hace en tiempos de ejecución, es decir, dinamicamente, no estatico, sino deberiamos compilarlo antes de correrlo y esto no es asi, se compila "mientras" se ejecuta.
+3: despues de esta compilacion que ahora la maquina puede entender, lo que hace el motor de js es entregarlo al navegador para que el navegador pueda saber que hacer.
+
+Backwards y Forwards
+Forward: cuando se instala una nueva version del motor. tu programa viejo es compatible con la nueva version. Asi NO funcion JavaScript.
+Backward: JS es Backward Compatible, quiere decir que todas las funciones nuevas o todos los modulos nuevos no van a romper el codigo viejo pero no vas a poder usar la version nueva. pero cuando los modulos o nuevas funciones de JS de estandarizan, es porque la w3c lo estableció así, entonces, todos los navegadores deben de tener esas funcionalidades y estadares.
+Para poder utilizar las funciones o modulos de JS nuevos no estandares y se quiere implementarlo en el entorno de trabajo, se utiliza compiladores de JS como BABEL (compilador de JS)
+
+BABEL
+es un compilador de JS que traduce versiones nuevas de JS con modulos nuevos no estandar para traducirlo a versiones viejas si estandar para que puedas ser compatible para todos los navegadores.
+
+
