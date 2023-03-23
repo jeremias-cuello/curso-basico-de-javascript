@@ -1,0 +1,4 @@
+Elementos de un lenguaje de programacion
+tenemos dos principales:
+ 1. Data que guardamos en memoria -> tipos de datos (Number, String, Onjects, Arrays, etc.)
+ 2. Tareas (funciones) que haremos con esa data
