@@ -45,3 +45,66 @@ function sumar(a, b) {
 }
 
 console.log(sumar(5, 8));
+
+// cual es la diferencia entre una funcion declarativa y otra de expresion?
+// podemos encontrarla en un concepto llamado Hoisting (Izar, o llamado burbujear)
+// significa poder llamar una funcion y luego definirla
+
+miFunction2();
+
+function miFunction2() {
+  console.log("Funcion statement");
+}
+
+// del modo de expresion no se puede hacer esto
+
+miFunction3();
+
+var miFunction3 = function() {
+  console.log("Funcion expressions");
+}
+
+console.log(typeof miFunction2); // function
+
+// ¿Porque pasa esto?
+// las declaraciones de variable var lo que hacen es encerrarse en una
+// burbuja y elevarse hasta arriba de todo el codigo asentando que se
+// declaran primero, luego se utilizan, function tambien es un tipo de dato: Function
+// y tiene ésta misma caracteristica que tiene var
+
+var nombre = "Jeremias";
+// los motores hacen:
+var nombre;
+nombre = "Jeremias";
+
+// es por eso que se crachea el programa en Function Expression:
+
+miFunction3();
+var miFunction3 = function() { console.log("Funcion expressions"); }
+
+// Luego
+miFunction3();
+var miFunction3;
+miFunction3 = function() { console.log("Funcion expressions"); }
+
+// Luego por causa de "burbujear el var"
+var miFunction3; // miFunction: undefined
+miFunction3(); // miFunction3 is not a Function. taraaan!
+miFunction3 = function() { console.log("Funcion expressions"); }
+
+
+// Luego con Funcion statement
+
+miFunction2();
+
+function miFunction2() {
+  console.log("Funcion statement");
+}
+
+// Se aplica Hoisting y...
+
+function miFunction2() {
+  console.log("Funcion statement");
+}
+// miFunction2: Funcion
+miFunction2();
