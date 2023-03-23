@@ -19,3 +19,4 @@ undefined
 
 // Hay tipos de datos primitivos, de objectos y "raros" por ejemplo
 // typeof undefined = undefined, typeof null = object, etc.
+// undefined se puede definir como el espacio (variable) que todavia no tiene un valor
