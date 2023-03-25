@@ -40,3 +40,14 @@ console.log('edad: ' + ++edad);
 var edad = 19;
 edad += 2;
 console.log(edad);
+
+// operadores de decremento
+var edad = 19;
+console.log('edad: ' + edad--);
+
+var edad = 19;
+console.log('edad: ' + --edad);
+
+var edad = 19;
+edad -= 4;
+console.log(edad);
