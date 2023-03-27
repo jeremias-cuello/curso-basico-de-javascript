@@ -27,9 +27,6 @@ var miAuto = {
   marca: 'Toyota',
   modelo: 'Corolla',
   annio: 2020,
-  antiguedad: function(){
-    return Date().split(" ")[3] - this.annio;
-  },
   detelleDelAuto: function () {
     return `Auto ${this.modelo} - ${this.annio}`;
   }
@@ -58,3 +55,21 @@ var autoNuevo3 = new Auto('Tesla', 'Corolla', 2020);
 console.log(autoNuevo);
 console.log(autoNuevo2);
 console.log(autoNuevo3);
+
+// reto: hacer un programa que fabrique objetos automaticamente
+// que el programa los fabrique solitos
+
+var autos = [];
+for (var i = 1; i <= 5; i++) {
+  var nombre = prompt('Nombre:');
+  var modelo = prompt('Modelo:');
+  var annio = prompt('Año:');
+  autos.push(new Auto(nombre, modelo, annio));
+}
+
+for (let i = 0; i < autos.length; i++) {
+  const auto = autos[i];
+  console.log(auto);
+}
+
+console.log(autos);
