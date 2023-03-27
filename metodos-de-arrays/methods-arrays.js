@@ -19,3 +19,31 @@ var nombreArticulos = articulos.map(function(a){
   return a.nombre
 });
 console.log(nombreArticulos);
+
+// .find() es un metodo que encuentra un elemento de un articulo
+
+var encontrado = articulos.find(function(a){
+  return a.nombre === 'Laptop';
+});
+var articulosfiltrados1 = articulos.filter(function(a){
+  return a.nombre === 'Laptop'
+});
+
+// la diferencia entre filter y find en este caso es que:
+// filter nos devuelve un arreglo aunque sea de un elemento, si no lo encuentra nos devuelve []
+// find nos devuelve un elemento, si no lo encuentra nos devuelve undefined
+console.log(encontrado);
+console.log(articulosfiltrados1);
+
+// recorre todo el array, devulve void
+articulos.forEach(function(a){
+  console.log(a.nombre);
+});
+
+
+// .some() nos devulve boolean. determina si existen elementos dentro del array que cumplan la condicion
+var articulosBaratos = articulos.some(function(a){
+  return a.costo <= 700
+});
+
+console.log(articulosBaratos);
